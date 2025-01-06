@@ -1,4 +1,4 @@
-import init, { vis } from "./../wasm_program/pkg/wasm_program.js";
+import init, { vis } from "./wasm_program/pkg/wasm_program.js";
 
 let input = "";
 let output = "";
