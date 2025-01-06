@@ -9,7 +9,8 @@ You can access it directly on [GitHub Pages](https://shimo-1999.github.io/Baltos
 
 ### Example Video
 Here is an example video for **n=15**:
-![Visualizer Example](docs/assets/vis15.gif)
+
+<img src="docs/assets/vis15.gif" alt="Visualizer Example" width="300">
 
 ## Solver
 The Solver is a Rust program that implements a **difference-based Beam Search** algorithm, which is similar to Euler Tour Beam Search.  
@@ -23,4 +24,3 @@ It ranked **16th** in the Balto's Puzzle Contest.
 ## Links
 - [Balto's Puzzle Contest](http://azspcs.com/Contest/Balto'sPuzzle)
 - [Visualizer on GitHub Pages](https://shimo-1999.github.io/BaltosPuzzle/)
-
