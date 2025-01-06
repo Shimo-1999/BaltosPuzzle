@@ -17,7 +17,7 @@ It ranked **16th** in the Balto's Puzzle Contest.
 ### Details
 - **Language**: Rust
 - **Path**: `/solver`
-- The implementation requires tuning the **beam width** to achieve optimal results.
+- Increasing the **beam width** generally leads to better solutions, but at the cost of higher computational requirements.
 
 ## Links
 - [Balto's Puzzle Contest](http://azspcs.com/Contest/BaltosPuzzle): Official contest description and rules.
