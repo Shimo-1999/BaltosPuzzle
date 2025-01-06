@@ -1,0 +1,70 @@
+<html lang="unicode">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <title>Visualizer</title>
+
+  <body>
+    <h1>Visualizer</h1>
+    <hr />
+    <p>
+      <label>Input File:</label>
+      <select id="input" onchange="updateInput()">
+        <option value="in3">Grid size = 3</option>
+        <option value="in4">Grid size = 4</option>
+        <option value="in5">Grid size = 5</option>
+        <option value="in6">Grid size = 6</option>
+        <option value="in7">Grid size = 7</option>
+        <option value="in8">Grid size = 8</option>
+        <option value="in9">Grid size = 9</option>
+        <option value="in10">Grid size = 10</option>
+        <option value="in11">Grid size = 11</option>
+        <option value="in12">Grid size = 12</option>
+        <option value="in13">Grid size = 13</option>
+        <option value="in14">Grid size = 14</option>
+        <option value="in15">Grid size = 15</option>
+        <option value="in16">Grid size = 16</option>
+        <option value="in17">Grid size = 17</option>
+        <option value="in18">Grid size = 18</option>
+        <option value="in19">Grid size = 19</option>
+        <option value="in20">Grid size = 20</option>
+        <option value="in21">Grid size = 21</option>
+        <option value="in22">Grid size = 22</option>
+        <option value="in23">Grid size = 23</option>
+        <option value="in24">Grid size = 24</option>
+        <option value="in25">Grid size = 25</option>
+        <option value="in26">Grid size = 26</option>
+        <option value="in27">Grid size = 27</option>
+      </select>
+    </p>
+    <p>
+      <label>
+        Output:
+        <br />
+        <textarea id="output" rows="4" style="width: 650px" data-gramm_editor="false" oninput="updateOutput()">F1E6A2C3C5C5F1A1F3B4C5B1A1F</textarea>
+      </label>
+    </p>
+    <p style="display: flex">
+      <input type="button" id="play" value="▶" style="width: 32px; height: 32px; bottom: 5px; position: relative" onclick="togglePlay()"/>
+      &nbsp;
+      <label>
+        slow
+        <input type="range" id="speed" min="1" max="2000" value="50" style="width: 200px" />
+        fast
+      </label>
+      &nbsp;
+      <label>
+        turn:
+        <input type="number" id="turn" value="0" min="0" max="0" style="width: 70px; text-align: right" onchange="updateTurn(this.value)" />
+      </label>
+    </p>
+    <p>
+      <input type="range" id="t_bar" min="0" max="0" value="0" style="width: 650px" onchange="updateTurn(this.value)"/>
+    </p>
+    <hr />
+    <div id="result" style="user-select: none"></div>
+    <br />
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
